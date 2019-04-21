@@ -1,6 +1,6 @@
 node_modules
 server.js
-private-keys-mine
+private-keys
 usage.js
 fiddles.js
 .gitignore
