@@ -17,7 +17,8 @@
     "read",
     "write",
     "delete",
-    "update"
+    "update",
+    "clientSDK"
   ],
   "author": "Samim Yaquby",
   "license": "ISC",
