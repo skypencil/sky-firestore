@@ -1,0 +1,1 @@
+console.log('banana'.replace("a", "b"))
