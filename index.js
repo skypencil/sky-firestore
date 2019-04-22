@@ -1,8 +1,12 @@
 var firebase = require('firebase')
-var firebaseConfig = require("./private-keys/firebase")
+var appClient;
+var dbClient;
 
-var appClient = firebase.initializeApp(firebaseConfig)
-var dbClient = appClient.firestore()
+function initFirebase(config){
+    appClient = firebase.initializeApp(config)
+    dbClient = appClient.firestore()
+}
+
 
 function createMap(collectionName, uid, mapName, mapObject) {
     var result = new Promise(function (resolve, reject) {
@@ -21,6 +25,7 @@ function createMap(collectionName, uid, mapName, mapObject) {
 
 module.exports = {
     createMap: createMap,
+    initFirebase: initFirebase
 }
 
 
