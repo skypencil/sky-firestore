@@ -1,7 +1,10 @@
 var assert = require('assert')
 var chai = require("chai")
 var expect = chai.expect;
-var config = require('../private-keys/firebase.js')
+var config = require("../private-keys/firebase")
+
+var dotenv = require("dotenv")
+dotenv.config();
 
 var initFirebase = require("../index").initFirebase
 var createMap = require("../index").createMap
