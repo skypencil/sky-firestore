@@ -1,8 +1,12 @@
 var assert = require('assert')
 var chai = require("chai")
 var expect = chai.expect;
+var config = require('../private-keys/firebase.js')
 
+var initFirebase = require("../index").initFirebase
 var createMap = require("../index").createMap
+
+initFirebase(config)
 
 
 describe("createMap", function () {
